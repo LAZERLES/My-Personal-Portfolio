@@ -1,0 +1,3 @@
+https://boxicons.com/?query=li
+https://scrollrevealjs.org/
+https://fonts.google.com/selection/embed

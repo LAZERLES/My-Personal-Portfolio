@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqr.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="desktop-nav">
+        <div class="logo">Poomrapee</div>
+        <div>
+            <ul class="nav-link" id="menu-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience </a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- mobilenav -->
+    <nav id="ham-nav">
+        <div class="logo">Poomrapee</div>
+        <div class="hamburger-menu">
+            <div class="ham-bar" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-link">
+                <li><a href="#Home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#About" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section -->
+    <!-- Profile -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/me.png" alt="My profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text--p1">Hello, I'm</p>
+            <h1 class="title">Poomrapee Koonyosying</h1>
+            <p class="section__text--p2">FrontEnd Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+                    Dowload CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#Contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin-pic.png" alt="My LinkedIn-Profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/poomrapee-koonyodyings-lzr/'" ,>
+
+                <img src="./assets/github-logo.png" alt="My Github-Profile" class="icon"
+                    onclick="location.href='https://github.com/LAZERLES'">
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <p class="section__text--p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/me.png" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="/assets/exp.png" alt="Experience icon" class="icon">
+                        <h3>Programming Experience</h3>
+                        <p>3+ years of experience</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="/assets/Ed.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.S. Bachelor of Science in Computer Science <br>Chiang Mai Rajabhat University</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Hello my nickname is Noo,
+                        I would like to improve my skills and knowledge in order to develop Webs, learn to work cooperatively in a company and exchange experience with colleagues.</p>
+                </div>
+            </div>
+        </div>
+        <img src="/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <p class="section__text--p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">FrontEnd Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/Gcheckmark.png" alt="Experience  icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/Gcheckmark.png" alt="Experience  icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/Gcheckmark.png" alt="Experience  icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/Gcheckmark.png" alt="Experience  icon" class="icon">
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/Gcheckmark.png" alt="Experience  icon" class="icon">
+                            <div>
+                                <h3>Angular Framework</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">BackEnd Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/Gcheckmark.png" alt="Experience  icon" class="icon">
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/Gcheckmark.png" alt="Experience  icon" class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/Gcheckmark.png" alt="Experience  icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/Gcheckmark.png" alt="Experience  icon" class="icon">
+                            <div>
+                                <h3>Spring boot</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <img src="/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#project'">
+    </section>
+
+    <!-- Project -->
+    <section id="project">
+        <p class="section__text--p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="/assets/Cm.jpg" alt="project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://www.figma.com/design/bRJIy0hxpdUy9z9ez2PPPW/Car-Repair-Service-UX%2FUI-Demo-Design-(Software-Engineer)?node-id=0-1&t=5dwAYOwHD76qcSOq-1' ">
+                            Figma
+                        </button>
+                        <button class="btn btn-color-2 project-btn">
+                            Github
+                        </button>
+    
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="/assets/Cm.jpg" alt="project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://www.figma.com/design/bRJIy0hxpdUy9z9ez2PPPW/Car-Repair-Service-UX%2FUI-Demo-Design-(Software-Engineer)?node-id=0-1&t=5dwAYOwHD76qcSOq-1' ">
+                            Figma
+                        </button>
+                        <button class="btn btn-color-2 project-btn">
+                            Github
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+
+    <!-- Contact -->
+     <section id="contact">
+        <p class="section__text--p1">Get in touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="/assets/email.png" 
+                     alt="Email icon" 
+                     class="contact-icon">
+                <p><a href="mailto:poompepee@hotmail.com">poompepee@hotmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="/assets/linkedin-pic.png" 
+                     alt="LinkedIn icon" 
+                     class="contact-icon">
+                <p><a href="https://www.linkedin.com/in/poomrapee-koonyodyings-lzr">LinkedIn</a></p>
+            </div>
+        </div>
+     </section>
+
+     <!-- Footer -->
+      <footer>
+        <nav>
+            <div class="nav-link-container">
+                <ul class="nav-link" id="menu-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience </a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+          </nav>
+          <p>Copyright &copy; 2023 John Doe. All Rights Reserved.</p>
+      </footer>
+    <!-- JS -->
+    <!-- https://github.com/LAZERLES -->
+    <script src="script.js"></script>
+</body>
+
+</html>
